@@ -22,7 +22,7 @@ Hi, I'm Nico. I like building secure, scalable systems with expertise in web scr
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white)
 
-![Top Languages](https://streak-stats.demolab.com?user=n1colasgtz&theme=default&hide_border=true)
+<a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=n1colasgtz" alt="GitHub Streak" /></a>
 
 ![Email](https://img.shields.io/badge/nicolas2001movil@gmail.com-ffffff)  
 ![LinkedIn](https://img.shields.io/badge/LinkedIn-Nicolás%20Gutiérrez-FFFFFF?style=flat-square&logo=linkedin&logoColor=white)  
