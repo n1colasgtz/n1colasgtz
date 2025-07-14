@@ -1,6 +1,6 @@
 # 
 
-Hi, I'm Nico. I like building secure, scalable systems with expertise in web scraping, containerized deployments, and event-driven architectures. I love optimizing processes by designing creative solutions using a wide range of technologies like:
+Hi, I'm Nico. I like building secure, scalable systems with experience in web scraping, containerized deployments, and event-driven architectures. I love optimizing processes by designing creative solutions using a wide range of technologies, such as:
 
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white)
