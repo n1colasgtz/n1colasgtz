@@ -118,7 +118,7 @@ const Hero = () => {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="mb-10 flex justify-center"
           >
-            <TypewriterText text="Full-Stack Automation Engineer" />
+            <TypewriterText text="Automation Engineer" />
           </motion.div>
 
           <motion.div
