@@ -41,9 +41,9 @@ const SkillCategory = ({ icon, title, skills }) => {
 
 const Skills = () => {
   const proficiencyLevels = [
-    { level: 'Expert', description: 'Deep understanding and mastery, can architect complex solutions' },
-    { level: 'Advanced', description: 'Strong proficiency with independent problem-solving capabilities' },
-    { level: 'Proficient', description: 'Solid foundation with regular practical application' }
+    { level: 'Expert', description: 'Deep understanding and mastery, can architect complex solutions.' },
+    { level: 'Advanced', description: 'Strong proficiency with independent problem-solving capabilities.' },
+    { level: 'Proficient', description: 'Solid foundation with regular practical application.' }
   ];
 
   const backendSkills = [
@@ -57,17 +57,7 @@ const Skills = () => {
       level: 'Expert',
       description: 'Building robust microservices and RESTful APIs'
     },
-    { 
-      name: 'Lombok',
-      level: 'Advanced',
-      description: 'Code optimization and boilerplate reduction'
-    },
-    { 
-      name: 'Mockito',
-      level: 'Advanced',
-      description: 'Comprehensive unit testing and test-driven development'
-    },
-    { 
+    {
       name: 'Java Playwright',
       level: 'Expert',
       description: 'Advanced web automation and testing'
@@ -86,7 +76,7 @@ const Skills = () => {
       description: 'Container orchestration and cluster management'
     },
     { 
-      name: 'Docker',
+      name: 'Docker & Docker Compose',
       level: 'Expert',
       description: 'Containerization and deployment automation'
     },
@@ -102,7 +92,7 @@ const Skills = () => {
     },
     { 
       name: 'Cloud Computing',
-      level: 'Advanced',
+      level: 'Expert',
       description: 'Experience with major cloud platforms and architecture'
     },
     { 
@@ -120,7 +110,7 @@ const Skills = () => {
     },
     { 
       name: 'Redis',
-      level: 'Advanced',
+      level: 'Expert',
       description: 'Caching, session management, and real-time data handling'
     }
   ];
@@ -135,11 +125,6 @@ const Skills = () => {
       name: 'Bash',
       level: 'Advanced',
       description: 'Shell scripting and system automation'
-    },
-    { 
-      name: 'Jupyter',
-      level: 'Proficient',
-      description: 'Data analysis and visualization'
     }
   ];
 
