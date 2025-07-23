@@ -27,9 +27,9 @@ const TypewriterText = ({ text }) => {
   }, []);
 
   return (
-    <div className="font-mono bg-slate-800 px-2 sm:px-4 py-2 rounded-lg w-full max-w-[20rem] sm:max-w-[28rem] h-[2.5rem] flex items-center overflow-hidden">
-      <span className="text-green-400">$&nbsp;</span>
-      <span className="text-white text-sm sm:text-base whitespace-nowrap text-ellipsis overflow-hidden">{displayText}</span>
+    <div className="font-mono bg-slate-800 px-2 sm:px-4 py-2 rounded-lg w-full max-w-[18rem] sm:max-w-[24rem] md:max-w-[28rem] h-[2.5rem] flex items-center overflow-hidden">
+      <span className="text-green-400">$ </span>
+      <span className="text-white text-sm sm:text-base whitespace-nowrap text-ellipsis overflow-hidden flex-1">{displayText}</span>
       {showCursor && <span className="text-white">▋</span>}
     </div>
   );
