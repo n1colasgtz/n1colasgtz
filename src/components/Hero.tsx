@@ -27,16 +27,15 @@ const TypewriterText = ({ text }) => {
   }, []);
 
   return (
-    <div className="font-mono bg-slate-800 px-4 py-2 rounded-lg w-full max-w-[28rem] h-[2.5rem] flex items-center">
-      <span className="text-green-400">$  </span>
-      <span className="text-white">{displayText}</span>
+    <div className="font-mono bg-slate-800 px-2 sm:px-4 py-2 rounded-lg w-full max-w-[20rem] sm:max-w-[28rem] h-[2.5rem] flex items-center overflow-hidden">
+      <span className="text-green-400">$&nbsp;</span>
+      <span className="text-white text-sm sm:text-base whitespace-nowrap text-ellipsis overflow-hidden">{displayText}</span>
       {showCursor && <span className="text-white">▋</span>}
     </div>
   );
 };
 
 const Hero = () => {
-  // Generamos cuadrados de diferentes tamaños y colores
   const squares = Array.from({ length: 40 }, (_, i) => {
     const size = Math.floor(Math.random() * 60 + 30);
     const colors = [
@@ -60,7 +59,6 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-50 to-teal-50">
-      {/* Fondo de cuadrados animados */}
       <div className="absolute inset-0 overflow-hidden">
         {squares.map(square => (
           <motion.div
@@ -87,24 +85,22 @@ const Hero = () => {
           />
         ))}
       </div>
-      
-      {/* Patrón de cuadrícula sutil */}
+
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0 w-full h-full" style={{
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px)',
           backgroundSize: '50px 50px'
         }}></div>
       </div>
-      
-      {/* Contenido principal */}
+
       <div className="container max-w-6xl relative z-10 px-4">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
@@ -112,8 +108,8 @@ const Hero = () => {
           >
             Nicolás Gutiérrez
           </motion.h1>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.5 }}
@@ -121,16 +117,16 @@ const Hero = () => {
           >
             <TypewriterText text="Full-Stack Automation Engineer" />
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.5 }}
             className="flex flex-wrap justify-center gap-4 mb-8"
           >
-            <a 
-              href="https://www.linkedin.com/in/nicol%C3%A1s-guti%C3%A9rrez-0a389a315/" 
-              target="_blank" 
+            <a
+              href="https://www.linkedin.com/in/nicol%C3%A1s-guti%C3%A9rrez-0a389a315/"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 rounded-lg bg-teal-600 text-white hover:bg-teal-700 transition-colors shadow-md hover:shadow-lg"
               aria-label="LinkedIn profile"
@@ -138,9 +134,9 @@ const Hero = () => {
               <LinkedinIcon size={20} />
               <span>LinkedIn</span>
             </a>
-            <a 
-              href="https://github.com/n1colasgtz" 
-              target="_blank" 
+            <a
+              href="https://github.com/n1colasgtz"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-800 text-white hover:bg-slate-900 transition-colors shadow-md hover:shadow-lg"
               aria-label="GitHub profile"
@@ -149,8 +145,8 @@ const Hero = () => {
               <span>GitHub</span>
             </a>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.5 }}
@@ -161,16 +157,15 @@ const Hero = () => {
           </motion.div>
         </motion.div>
       </div>
-      
-      {/* Flecha indicadora de scroll con efecto bouncy */}
-      <motion.div 
+
+      <motion.div
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-slate-600 z-10"
-        animate={{ 
+        animate={{
           y: [0, 15, 0],
           opacity: [1, 0.8, 1]
         }}
-        transition={{ 
-          repeat: Infinity, 
+        transition={{
+          repeat: Infinity,
           duration: 1.5,
           ease: "easeInOut"
         }}
@@ -179,8 +174,7 @@ const Hero = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
       </motion.div>
-      
-      {/* Borde decorativo inferior */}
+
       <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-teal-400 via-blue-400 to-slate-800"></div>
     </section>
   );
